@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Clock with animated background</title>
+</head>
+<body onload = "initAllFunctions()">
+
+    <div class = "Sun"></div>
+    <div class = "Sunlight"></div>
+    <div class = "Moon"></div>
+    <div class = "Moonlight"></div>
+
+    <div class = "Stars">
+        <div class = "Starlight"></div>
+    </div>
+    
+    <div class = "Clock">
+        <div class = "Hour"></div>
+        <div class = "Date"></div>
+        <div class = "Day"></div>
+    </div>
+
+    <div class = "AnalogClock">
+        <div class="ClockHour" style="--i: 1;">I</div>
+        <div class="ClockHour" style="--i: 2;">II</div>
+        <div class="ClockHour" style="--i: 3;">III</div>
+        <div class="ClockHour" style="--i: 4;">IV</div>
+        <div class="ClockHour" style="--i: 5;">V</div>
+        <div class="ClockHour" style="--i: 6;">VI</div>
+        <div class="ClockHour" style="--i: 7;">VII</div>
+        <div class="ClockHour" style="--i: 8;">VIII</div>
+        <div class="ClockHour" style="--i: 9;">IX</div>
+        <div class="ClockHour" style="--i: 10;">X</div>
+        <div class="ClockHour" style="--i: 11;">XI</div>
+        <div class="ClockHour" style="--i: 12;">XII</div>
+
+        <div class="ClockMinuteSecond" style="--j: 1;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 2;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 3;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 4;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 5;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 6;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 7;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 8;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 9;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 10;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 11;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 12;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 13;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 14;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 15;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 16;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 17;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 18;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 19;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 20;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 21;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 22;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 23;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 24;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 25;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 26;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 27;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 28;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 29;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 30;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 31;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 32;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 33;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 34;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 35;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 36;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 37;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 38;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 39;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 40;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 41;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 42;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 43;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 44;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 45;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 46;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 47;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 48;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 49;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 50;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 51;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 52;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 53;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 54;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 55;"><b>|</b></div>
+        <div class="ClockMinuteSecond" style="--j: 56;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 57;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 58;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 59;">I</div>
+        <div class="ClockMinuteSecond" style="--j: 60;"><b>|</b></div>
+
+        <div class="ClockCenter">
+            <div class="SecondClockHand"></div>
+            <div class="MinuteClockHand"></div>
+            <div class="HourClockHand"></div>
+        </div>
+    </div>
+
+
+
+    <script type = "text/javascript" src = "script.js"></script>
+</body>
+</html>
